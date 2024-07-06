@@ -42,6 +42,7 @@
     {"id":{"name":"rm_gameplay","path":"rooms/rm_gameplay/rm_gameplay.yy",},},
     {"id":{"name":"spr_asteroids","path":"sprites/spr_asteroids/spr_asteroids.yy",},},
     {"id":{"name":"spr_bullet_player","path":"sprites/spr_bullet_player/spr_bullet_player.yy",},},
+    {"id":{"name":"spr_enemy1","path":"sprites/spr_enemy1/spr_enemy1.yy",},},
     {"id":{"name":"spr_player","path":"sprites/spr_player/spr_player.yy",},},
   ],
   "resourceType":"GMProject",

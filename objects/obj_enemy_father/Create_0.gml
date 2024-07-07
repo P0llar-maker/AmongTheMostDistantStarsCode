@@ -1,38 +1,54 @@
-image_blend = c_yellow;
-image_xscale = 0.4;
-image_yscale = 0.4;
-delay = 0;
-timer = 0.7;
-vel_bullet = 3.5;
+image_blend = color;
+image_xscale = scale;
+image_yscale = scale;
+delay_bullet = 0;
 hspd = 0;
 vspd = 0;
 dir = 0;
-target = obj_player;
-spd = 2.5;
 function Shoot()
 {
-	var _Shoot = distance_to_object(obj_player) < 200;
-	delay--;
-	if (delay <= 0)
+	var _Shoot = distance_to_object(target) < distance;
+	delay_bullet--;
+	if (delay_bullet <= 0)
 	{
 		if (_Shoot)
 		{
-			delay = timer * room_speed;	
-			var bullet = instance_create_layer(x, y, "Bullet", obj_bullet_player);
-			bullet.direction = image_angle + 90;
-			bullet.speed = vel_bullet;
-			bullet.image_blend = c_yellow;
+			delay_bullet = timer_bullet * room_speed;	
+			var _bullet = instance_create_layer(x, y, "Bullet", bullet);
+			_bullet.direction = image_angle + 90;
+			_bullet.speed = vel_bullet;
+			_bullet.image_blend = color;
+			_bullet.image_xscale  = BulletScale;
+			_bullet.image_yscale  = BulletScale;
+		}
+	}
+}
+function ShootOtherDirection()
+{
+	delay_bullet--;
+	if (delay_bullet <= 0)
+	{
+		delay_bullet = timer_bullet * room_speed;
+		for (var i = 0; i < qtd_bullet; i++)
+		{
+			var angle = 360/qtd_bullet;
+			var _bullet = instance_create_layer(x, y, "bullet", bullet);
+			_bullet.direction = (i * angle);
+			_bullet.speed = vel_bullet;
+			_bullet.image_blend = color;
+			_bullet.image_xscale  = BulletScale;
+			_bullet.image_yscale  = BulletScale;
 		}
 	}
 }
 function Move()
 {
-	var _Distance_ = distance_to_object(obj_player) > 200;
+	var _Distance_ = distance_to_object(target) > distance;
 	if (_Distance_)
 	{
 		dir = point_direction(x, y, target.x, target.y);
-		hspd = lengthdir_x(spd, dir);
-		vspd = lengthdir_y(spd, dir);
+		hspd = lengthdir_x(vel_move, dir);
+		vspd = lengthdir_y(vel_move, dir);
 		x+=hspd;
 		y+=vspd;
 	}

@@ -45,6 +45,7 @@
     {"id":{"name":"spr_asteroids","path":"sprites/spr_asteroids/spr_asteroids.yy",},},
     {"id":{"name":"spr_bullet_player","path":"sprites/spr_bullet_player/spr_bullet_player.yy",},},
     {"id":{"name":"spr_enemy_red","path":"sprites/spr_enemy_red/spr_enemy_red.yy",},},
+    {"id":{"name":"spr_enemy_yellow","path":"sprites/spr_enemy_yellow/spr_enemy_yellow.yy",},},
     {"id":{"name":"spr_player","path":"sprites/spr_player/spr_player.yy",},},
   ],
   "resourceType":"GMProject",

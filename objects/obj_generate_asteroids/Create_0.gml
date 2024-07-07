@@ -1,12 +1,13 @@
 _x = 0;
 _y = 0;
 delay = 0;
-timer = 2;
+timer = 0;
 function Generate()
 {
 	delay--;
 	if (delay <= 0)
 	{
+		timer = irandom_range(2, 4)
 		delay = timer * room_speed;
 		var side = irandom(1);
 		if (side == 1)

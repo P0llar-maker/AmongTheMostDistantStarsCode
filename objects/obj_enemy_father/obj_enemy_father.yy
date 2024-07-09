@@ -46,6 +46,7 @@
         "GMObject",
       ],"listItems":[],"multiselect":false,"name":"bullet","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"","varType":5,},
     {"$GMObjectProperty":"v1","%Name":"BulletScale","filters":[],"listItems":[],"multiselect":false,"name":"BulletScale","rangeEnabled":true,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"0.0","varType":0,},
+    {"$GMObjectProperty":"v1","%Name":"bullet_direction","filters":[],"listItems":[],"multiselect":false,"name":"bullet_direction","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"","varType":4,},
   ],
   "resourceType":"GMObject",
   "resourceVersion":"2.0",

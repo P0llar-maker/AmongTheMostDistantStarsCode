@@ -15,7 +15,7 @@ function Shoot()
 		{
 			delay_bullet = timer_bullet * room_speed;	
 			var _bullet = instance_create_layer(x, y, "Bullet", bullet);
-			_bullet.direction = image_angle + 90;
+			_bullet.direction = bullet_direction;
 			_bullet.speed = vel_bullet;
 			_bullet.image_blend = color;
 			_bullet.image_xscale  = BulletScale;
@@ -23,6 +23,7 @@ function Shoot()
 		}
 	}
 }
+
 function ShootOtherDirection()
 {
 	delay_bullet--;

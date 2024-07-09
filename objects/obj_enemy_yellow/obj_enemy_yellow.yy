@@ -19,8 +19,8 @@
     {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_enemy_father","path":"objects/obj_enemy_father/obj_enemy_father.yy",},"propertyId":{"name":"BulletScale","path":"objects/obj_enemy_father/obj_enemy_father.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"1.5",},
   ],
   "parent":{
-    "name":"Objects",
-    "path":"folders/Objects.yy",
+    "name":"Enemy´s",
+    "path":"folders/Objects/Enemy´s.yy",
   },
   "parentObjectId":{
     "name":"obj_enemy_father",
@@ -44,8 +44,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_player",
-    "path":"sprites/spr_player/spr_player.yy",
+    "name":"spr_enemy_yellow",
+    "path":"sprites/spr_enemy_yellow/spr_enemy_yellow.yy",
   },
   "spriteMaskId":null,
   "visible":true,

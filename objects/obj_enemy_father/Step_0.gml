@@ -1,3 +1,4 @@
+Destroyer();
 if (AngleChangeByPlayer)
 {
 	image_angle = point_direction(x, y, target.x, target.y) - 90;

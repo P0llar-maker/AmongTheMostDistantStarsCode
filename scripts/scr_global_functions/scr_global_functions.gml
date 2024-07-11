@@ -5,7 +5,7 @@ function DestroyWhenOutTheRoom(_x, _y, _value)
 	if (_x<0-_value){instance_destroy()};
 	if (_y<0-_value){instance_destroy()};
 }
-function Add(variable)
+function Add(number)
 {
-	return variable = variable+1;
+	return number++;
 }

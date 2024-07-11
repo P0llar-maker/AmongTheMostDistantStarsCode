@@ -5,6 +5,7 @@ delay_bullet = 0;
 hspd = 0;
 vspd = 0;
 dir = 0;
+HP_max = HP;
 function Shoot()
 {
 	var _Shoot = distance_to_object(target) < distance;
@@ -15,7 +16,7 @@ function Shoot()
 		{
 			delay_bullet = timer_bullet * room_speed;	
 			var _bullet = instance_create_layer(x, y, "Bullet", bullet);
-			_bullet.direction = _direction;
+			_bullet.direction = point_direction(x, y, target.x, target.y);
 			_bullet.speed = vel_bullet;
 			_bullet.image_blend = color;
 			_bullet.image_xscale  = BulletScale;
@@ -50,9 +51,12 @@ function ShootMoreOne()
 		delay_bullet = room_speed * timer_bullet;
 		for (var i = 0; i < qtd_bullet; i++)
 		{
-			var angle = -_angle0 + (i * _angle1);
-			var _bullet = instance_create_layer(x, y, "bullet", bullet);
-			_bullet.direction = _direction + angle;
+			var angle = _angle0 + (i * _angle1);
+			var _target_ = point_direction(x, y, target.x, target.y);
+			var _x = lengthdir_x(sprite_width, _target_ + angle)
+			var _y = lengthdir_y(sprite_height, _target_ + angle)
+			var _bullet = instance_create_layer(x+_x, y+_y, "bullet", bullet);
+			_bullet.direction =  _target_ + angle;
 			_bullet.speed = vel_bullet;
 			_bullet.image_blend = color;
 			_bullet.image_xscale  = BulletScale;
@@ -70,5 +74,12 @@ function Move()
 		vspd = lengthdir_y(vel_move, dir);
 		x+=hspd;
 		y+=vspd;
+	}
+}
+function Destroyer()
+{
+	if (HP <= 0)
+	{
+		instance_destroy();
 	}
 }

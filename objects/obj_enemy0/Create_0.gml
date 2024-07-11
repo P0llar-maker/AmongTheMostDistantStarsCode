@@ -1,15 +1,12 @@
-velh = 0;
-velv = 0;
-dir = 0;
-vel = 2.5;
-vel_bullet = 8.5;
+image_blend = c_yellow;
+image_xscale = 0.4;
+image_yscale = 0.4;
 delay = 0;
-timer = 1;
-damage = 2;
-
+timer = 0.7;
+vel_bullet = 3.5;
 function Shoot()
 {
-	var KeyShoot = mouse_check_button(mb_left);
+	var KeyShoot = distance_to_object(obj_player) < 150;
 	delay--;
 	if (delay <= 0)
 	{
@@ -19,18 +16,7 @@ function Shoot()
 			var bullet = instance_create_layer(x, y, "Bullet", obj_bullet_player);
 			bullet.direction = image_angle + 90;
 			bullet.speed = vel_bullet;
+			bullet.image_blend = c_yellow;
 		}
-	}
-}
-function CriticalDamage()
-{
-	var _sort = irandom_range(1, 10);
-	if (_sort == 2)
-	{
-		damage = 4;
-	}
-	else
-	{
-		damage = 2;
 	}
 }

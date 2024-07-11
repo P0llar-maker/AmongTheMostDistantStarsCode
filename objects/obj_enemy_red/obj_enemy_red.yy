@@ -5,7 +5,7 @@
   "managed":true,
   "name":"obj_enemy_red",
   "overriddenProperties":[
-    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_enemy_father","path":"objects/obj_enemy_father/obj_enemy_father.yy",},"propertyId":{"name":"color","path":"objects/obj_enemy_father/obj_enemy_father.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"$FF00004C",},
+    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_enemy_father","path":"objects/obj_enemy_father/obj_enemy_father.yy",},"propertyId":{"name":"color","path":"objects/obj_enemy_father/obj_enemy_father.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"$FF241CEE",},
     {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_enemy_father","path":"objects/obj_enemy_father/obj_enemy_father.yy",},"propertyId":{"name":"scale","path":"objects/obj_enemy_father/obj_enemy_father.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"1.3",},
     {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_enemy_father","path":"objects/obj_enemy_father/obj_enemy_father.yy",},"propertyId":{"name":"timer_bullet","path":"objects/obj_enemy_father/obj_enemy_father.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"1.5",},
     {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_enemy_father","path":"objects/obj_enemy_father/obj_enemy_father.yy",},"propertyId":{"name":"vel_bullet","path":"objects/obj_enemy_father/obj_enemy_father.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"2.5",},
@@ -20,6 +20,7 @@
     {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_enemy_father","path":"objects/obj_enemy_father/obj_enemy_father.yy",},"propertyId":{"name":"_Move_","path":"objects/obj_enemy_father/obj_enemy_father.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"true",},
     {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_enemy_father","path":"objects/obj_enemy_father/obj_enemy_father.yy",},"propertyId":{"name":"_angle0","path":"objects/obj_enemy_father/obj_enemy_father.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"0",},
     {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_enemy_father","path":"objects/obj_enemy_father/obj_enemy_father.yy",},"propertyId":{"name":"_angle1","path":"objects/obj_enemy_father/obj_enemy_father.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"0",},
+    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_enemy_father","path":"objects/obj_enemy_father/obj_enemy_father.yy",},"propertyId":{"name":"HP","path":"objects/obj_enemy_father/obj_enemy_father.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"10",},
   ],
   "parent":{
     "name":"Enemy´s",

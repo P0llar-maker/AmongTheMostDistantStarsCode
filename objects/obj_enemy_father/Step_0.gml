@@ -11,5 +11,12 @@ switch TypeShoot
 	case "OtherDirections":
 	ShootOtherDirection();
 	break
+	
+	case "ShootOneMore":
+	ShootMoreOne();
+	break
 }
-Move();
+if (_Move_)
+{
+	Move();
+}

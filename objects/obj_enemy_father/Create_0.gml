@@ -15,7 +15,7 @@ function Shoot()
 		{
 			delay_bullet = timer_bullet * room_speed;	
 			var _bullet = instance_create_layer(x, y, "Bullet", bullet);
-			_bullet.direction = bullet_direction;
+			_bullet.direction = _direction;
 			_bullet.speed = vel_bullet;
 			_bullet.image_blend = color;
 			_bullet.image_xscale  = BulletScale;
@@ -35,6 +35,24 @@ function ShootOtherDirection()
 			var angle = 360/qtd_bullet;
 			var _bullet = instance_create_layer(x, y, "bullet", bullet);
 			_bullet.direction = (i * angle);
+			_bullet.speed = vel_bullet;
+			_bullet.image_blend = color;
+			_bullet.image_xscale  = BulletScale;
+			_bullet.image_yscale  = BulletScale;
+		}
+	}
+}
+function ShootMoreOne()
+{
+	delay_bullet--;
+	if (delay_bullet <= 0)
+	{
+		delay_bullet = room_speed * timer_bullet;
+		for (var i = 0; i < qtd_bullet; i++)
+		{
+			var angle = -_angle0 + (i * _angle1);
+			var _bullet = instance_create_layer(x, y, "bullet", bullet);
+			_bullet.direction = _direction + angle;
 			_bullet.speed = vel_bullet;
 			_bullet.image_blend = color;
 			_bullet.image_xscale  = BulletScale;

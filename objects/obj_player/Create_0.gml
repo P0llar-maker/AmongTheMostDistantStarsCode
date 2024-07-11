@@ -2,7 +2,7 @@ velh = 0;
 velv = 0;
 dir = 0;
 vel = 2.5;
-vel_bullet = 4.5;
+vel_bullet = 6.5;
 delay = 0;
 timer = 1;
 

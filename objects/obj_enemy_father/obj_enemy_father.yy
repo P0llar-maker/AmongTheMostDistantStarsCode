@@ -40,13 +40,17 @@
     {"$GMObjectProperty":"v1","%Name":"TypeShoot","filters":[],"listItems":[
         "\"OneDirection\"",
         "\"OtherDirections\"",
+        "\"ShootOneMore\"",
       ],"multiselect":false,"name":"TypeShoot","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"\"OneDirection\"","varType":6,},
     {"$GMObjectProperty":"v1","%Name":"qtd_bullet","filters":[],"listItems":[],"multiselect":false,"name":"qtd_bullet","rangeEnabled":true,"rangeMax":360.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"0","varType":1,},
     {"$GMObjectProperty":"v1","%Name":"bullet","filters":[
         "GMObject",
       ],"listItems":[],"multiselect":false,"name":"bullet","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"","varType":5,},
     {"$GMObjectProperty":"v1","%Name":"BulletScale","filters":[],"listItems":[],"multiselect":false,"name":"BulletScale","rangeEnabled":true,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"0.0","varType":0,},
-    {"$GMObjectProperty":"v1","%Name":"bullet_direction","filters":[],"listItems":[],"multiselect":false,"name":"bullet_direction","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"","varType":4,},
+    {"$GMObjectProperty":"v1","%Name":"_Move_","filters":[],"listItems":[],"multiselect":false,"name":"_Move_","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"true","varType":3,},
+    {"$GMObjectProperty":"v1","%Name":"_angle0","filters":[],"listItems":[],"multiselect":false,"name":"_angle0","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"0","varType":1,},
+    {"$GMObjectProperty":"v1","%Name":"_angle1","filters":[],"listItems":[],"multiselect":false,"name":"_angle1","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"0","varType":1,},
+    {"$GMObjectProperty":"v1","%Name":"_direction","filters":[],"listItems":[],"multiselect":false,"name":"_direction","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"","varType":4,},
   ],
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
